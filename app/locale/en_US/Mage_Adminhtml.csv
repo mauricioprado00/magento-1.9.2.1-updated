@@ -1217,6 +1217,7 @@
 "Yes (302 Found)","Yes (302 Found)"
 "Yes (only price with tax)","Yes (only price with tax)"
 "You cannot delete your own account.","You cannot delete your own account."
+"Disallowed block name for frontend.","Disallowed block name for frontend."
 "You have %s unread message(s).","You have %s unread message(s)."
 "You have %s unread message(s). <a href=""%s"">Go to messages inbox</a>.","You have %s unread message(s). <a href=""%s"">Go to messages inbox</a>."
 "You have %s, %s and %s unread messages. <a href=""%s"">Go to messages inbox</a>.","You have %s, %s and %s unread messages. <a href=""%s"">Go to messages inbox</a>."
