@@ -567,3 +567,46 @@ patching file downloader/Maged/Controller.php
 patching file skin/adminhtml/default/enterprise/images/placeholder/thumbnail.jpg
 
 
+2019-07-11 13:17:26 UTC | SUPEE-10975_CE_v1.9.3.3 | CE_1.9.3.3 | v1 | d178906f22d3b7bb49584bd25c60ba1fe28ed42d | Thu Nov 8 14:28:19 2018 +0200 | ce-1.9.3.3-dev
+patching file app/code/core/Mage/Adminhtml/Block/Customer/Group/Edit.php
+patching file app/code/core/Mage/Adminhtml/Block/Newsletter/Template/Edit.php
+patching file app/code/core/Mage/Adminhtml/controllers/Cms/BlockController.php
+patching file app/code/core/Mage/Adminhtml/controllers/Customer/GroupController.php
+patching file app/code/core/Mage/Adminhtml/controllers/SitemapController.php
+patching file app/code/core/Mage/Adminhtml/controllers/System/BackupController.php
+patching file app/code/core/Mage/Captcha/Model/Observer.php
+patching file app/code/core/Mage/Captcha/Model/Zend.php
+patching file app/code/core/Mage/Captcha/etc/config.xml
+patching file app/code/core/Mage/Catalog/Model/Api2/Product/Image/Rest/Admin/V1.php
+patching file app/code/core/Mage/Catalog/Model/Product/Attribute/Media/Api.php
+patching file app/code/core/Mage/Cms/Model/Wysiwyg/Images/Storage.php
+Hunk #2 succeeded at 387 (offset -1 lines).
+patching file app/code/core/Mage/Core/etc/config.xml
+patching file app/code/core/Mage/Core/sql/core_setup/upgrade-1.6.0.6.1.2-1.6.0.6.1.3.php
+patching file app/code/core/Mage/Dataflow/Model/Convert/Container/Abstract.php
+patching file app/code/core/Mage/ImportExport/Model/Import/Entity/Customer.php
+Hunk #1 succeeded at 280 (offset -9 lines).
+patching file app/code/core/Mage/ImportExport/Model/Import/Entity/Customer/Address.php
+Hunk #1 succeeded at 281 (offset -22 lines).
+patching file app/code/core/Mage/Payment/etc/config.xml
+patching file app/code/core/Mage/Payment/etc/system.xml
+patching file app/code/core/Mage/Payment/sql/payment_setup/upgrade-1.6.0.0.1.1-1.6.0.0.1.2.php
+patching file app/code/core/Mage/Sendfriend/Block/Send.php
+patching file app/code/core/Mage/Wishlist/controllers/IndexController.php
+patching file app/code/core/Zend/Controller/Request/Http.php
+patching file app/design/adminhtml/default/default/template/cms/browser/content/files.phtml
+patching file app/design/frontend/base/default/layout/captcha.xml
+patching file app/design/frontend/base/default/template/wishlist/sharing.phtml
+patching file app/design/frontend/rwd/default/layout/page.xml
+patching file app/design/frontend/rwd/default/template/sendfriend/send.phtml
+patching file app/etc/modules/Mage_All.xml
+patching file app/etc/modules/Mage_Captcha.xml
+patching file app/locale/en_US/Mage_Wishlist.csv
+patching file js/lib/jquery/jquery-1.12.0.js
+patching file js/lib/jquery/jquery-1.12.0.min.js
+patching file js/lib/jquery/jquery-1.12.0.min.map
+patching file js/lib/jquery/jquery-1.12.1.js
+patching file js/lib/jquery/jquery-1.12.1.min.js
+patching file js/lib/jquery/jquery-1.12.1.min.map
+
+
