@@ -76,6 +76,26 @@ class Mage_Core_Helper_String extends Mage_Core_Helper_Abstract
     }
 
     /**
+     * UnSerialize string
+     * @param $str
+     * @return mixed|null
+     * @throws Exception
+     */
+    public function unserialize($str)
+    {
+        $reader = new Unserialize_Reader_ArrValue('data');
+        $prevChar = null;
+        for ($i = 0; $i < strlen($str); $i++) {
+            $char = $str[$i];
+            $result = $reader->read($char, $prevChar);
+            if (!is_null($result)) {
+                return $result;
+            }
+            $prevChar = $char;
+        }
+    }
+
+    /**
      * Retrieve string length using default charset
      *
      * @param string $string

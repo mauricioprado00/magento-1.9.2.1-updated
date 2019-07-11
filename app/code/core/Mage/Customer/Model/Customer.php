@@ -48,6 +48,11 @@ class Mage_Customer_Model_Customer extends Mage_Core_Model_Abstract
     const XML_PATH_GENERATE_HUMAN_FRIENDLY_ID   = 'customer/create_account/generate_human_friendly_id';
     /**#@-*/
 
+    /**
+     * Maximum Password Length
+     */
+    const MAXIMUM_PASSWORD_LENGTH = 256;
+
     /**#@+
      * Codes of exceptions related to customer model
      */
@@ -840,6 +845,10 @@ class Mage_Customer_Model_Customer extends Mage_Core_Model_Abstract
         }
         if (strlen($password) && !Zend_Validate::is($password, 'StringLength', array(6))) {
             $errors[] = Mage::helper('customer')->__('The minimum password length is %s', 6);
+        }
+        if (strlen($password) && !Zend_Validate::is($password, 'StringLength', array('max' => self::MAXIMUM_PASSWORD_LENGTH))) {
+            $errors[] = Mage::helper('customer')
+                ->__('Please enter a password with at most %s characters.', self::MAXIMUM_PASSWORD_LENGTH);
         }
         $confirmation = $this->getPasswordConfirmation();
         if ($password != $confirmation) {
